@@ -18,7 +18,7 @@ def encode(password: int):
             character = str(character)[-1]
         encoded += str(character)
 
-    return int(encoded)
+    return encoded
 
 
 def show_menu():
