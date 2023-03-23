@@ -1,3 +1,5 @@
+# Jacques Fleischer
+
 def encode(password: int):
     # password is an eight-digit number that will be encoded
     # each digit is shifted upwards by 3
@@ -18,7 +20,7 @@ def encode(password: int):
             character = str(character)[-1]
         encoded += str(character)
 
-    return encoded
+    return int(encoded)
 
 
 def show_menu():
@@ -61,3 +63,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
