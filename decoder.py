@@ -6,6 +6,7 @@ def decoder(encrypted_password):
 
     # initialize empty encoded password
     decoded_password = ''
+    encrypted_password = str(encrypted_password)
 
     # iterate through each character in string
     for character in encrypted_password:

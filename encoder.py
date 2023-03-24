@@ -1,9 +1,9 @@
 # Jacques Fleischer
+from decoder import decoder
 
 def encode(password: int):
     # password is an eight-digit number that will be encoded
     # each digit is shifted upwards by 3
-
     # convert to string
     password = str(password)
 
@@ -52,7 +52,7 @@ def main():
         if selection == 2:
             # decode
             if encoded and decoded:
-                print(f'The encoded password is {encoded}, and the original password is {decoded}.\n')
+                print(f'The encoded password is {encoded}, and the original password is {decoder(encoded)}.\n')
             else:
                 # encoded and decoded are none, which means that the user has not entered anything
                 print('You have not yet encoded a password!')
